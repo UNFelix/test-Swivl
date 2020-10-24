@@ -23,6 +23,7 @@ section {
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 24px 135px 24px 135px;
 }
 
@@ -36,6 +37,7 @@ section {
 .header-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 98px;
   margin-bottom: 23px;
   &__item {
@@ -79,8 +81,6 @@ section {
 }
 
 .main {
-  // display: flex;
-  // justify-content: space-between;
   background-color: #f2f2f2;
   padding-top: 72px;
   box-shadow: inset 15px 40px 30px -30px rgba(204, 204, 204, 1);
@@ -91,10 +91,6 @@ section {
   width: 100%;
   height: 400px;
 }
-.text-content {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .profile-wrapper {
   display: flex;
@@ -102,7 +98,6 @@ section {
 
 .profile {
   max-width: 350px;
-  height: 344px;
   &-avatar {
     margin-right: 24px;
   }
@@ -151,13 +146,14 @@ section {
     }
   }
   &-menu {
+    display: flex;
+    align-items: end;
     & img {
       margin-left: 25px;
     }
   }
   &-status {
-    // display: flex;
-    // align-items: start;
+    display: flex;
     margin-left: 77px;
     & img {
       margin: 0 20px;
