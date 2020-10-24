@@ -10,7 +10,8 @@ h2 {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-a {
+a,
+a:hover {
   text-decoration: none;
   color: #3e4056;
 }
@@ -38,10 +39,10 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 98px;
+  margin-left: 35px;
   margin-bottom: 23px;
   &__item {
-    padding: 0 37px;
+    padding: 10px 10px;
     & a {
       font-weight: 600;
       font-size: 14px;
@@ -101,7 +102,7 @@ section {
   &-avatar {
     margin-right: 24px;
   }
-  &-title {
+  &-title h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 26px;
@@ -109,10 +110,12 @@ section {
   &-id {
     margin-top: 8px;
     margin-bottom: 16px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.5px;
+    & span {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.5px;
+    }
   }
   &-edit {
     display: flex;
@@ -148,6 +151,7 @@ section {
   &-menu {
     display: flex;
     align-items: end;
+    margin-bottom: 35px;
     & img {
       margin-left: 25px;
     }
