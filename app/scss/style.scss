@@ -16,15 +16,15 @@ a {
 }
 
 section {
-  padding-left: 135px;
-  padding-right: 135px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 24px 135px 24px 135px;
+  margin: 24px 35px 24px 35px;
 }
 
 .header-title {
@@ -161,4 +161,8 @@ section {
   }
 }
 
+.text-content {
+  display: flex;
+  flex-wrap: wrap;
+}
 @import "media";

@@ -1,4 +1,22 @@
-@media (min-width: 769px) {
+@media (min-width: 1199px) {
+  .text-content {
+    position: relative;
+    bottom: 346px;
+    left: 410px;
+  }
+}
+
+@media (min-width: 767px) {
+  section {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 24px 135px 24px 135px;
+  }
   .profile {
     &-menu {
       position: relative;
