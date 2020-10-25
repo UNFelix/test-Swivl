@@ -84,3 +84,45 @@
   display: flex;
   align-items: center;
 }
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  &-body {
+    // position: relative;
+    visibility: hidden;
+    // display: none;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: 25px;
+    background: #ffffff;
+    box-shadow: -15px 0px 100px -20px rgba(204, 204, 204, 1);
+    mix-blend-mode: normal;
+    opacity: 0.94;
+    backdrop-filter: blur(21.7463px);
+    border-radius: 8px;
+    padding: 23px 0;
+    width: 176px;
+  }
+  &-block {
+    padding: 9px 20px;
+    cursor: pointer;
+    &:hover {
+      background: #ecf1f8;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+      backdrop-filter: blur(54.3656px);
+    }
+  }
+  & a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 16px;
+  }
+}
+.dropdown:hover .dropdown-body {
+  visibility: visible;
+}

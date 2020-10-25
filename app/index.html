@@ -72,11 +72,24 @@
 
     <div class="profile">
       <div class="profile-menu">
-        <img src="./img/dots-menu.svg" alt="Menu">
+        <div class="dropdown">
+          <img class="profile-menu__img" src="./img/dots-menu.svg" alt="Menu">
+          <div class="dropdown-body">
+            <div class="dropdown-block">
+              <img src="./img/report.svg" alt="Report User">
+              <a href="#">Report User</a>
+            </div>
+            <div class="dropdown-block">
+              <img src="./img/block.svg" alt="Block User">
+              <a href="#">Block User</a>
+            </div>
+          </div>
+        </div>
         <div class="profile-status">
           <span>Public</span>
-          <img src="./img/switcher.png" alt="Switcher">
+          <img class="profile-status__img" src="./img/switcher.png" alt="Switcher">
           <span>Private</span>
+
         </div>
       </div>
 
@@ -204,7 +217,16 @@
     </div>
 
   </section>
-
+  <!-- <div class="dropdown">
+    <div class="dropdown-block">
+      <img src="./img/report.svg" alt="Report User">
+      <a href="#">Report User</a>
+    </div>
+    <div class="dropdown-block">
+      <img src="./img/block.svg" alt="Block User">
+      <a href="#">Block User</a>
+    </div>
+  </div> -->
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
