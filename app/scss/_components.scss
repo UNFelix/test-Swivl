@@ -89,9 +89,7 @@
   position: relative;
   cursor: pointer;
   &-body {
-    // position: relative;
     visibility: hidden;
-    // display: none;
     position: absolute;
     z-index: 1;
     top: 24px;
