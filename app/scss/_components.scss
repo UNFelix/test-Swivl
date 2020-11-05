@@ -124,3 +124,35 @@
 .dropdown.open .dropdown-body {
   visibility: visible;
 }
+.toggler {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: #ed5368;
+  border-radius: 12px;
+  transition: 0.5s;
+  border: none;
+}
+.toggler::after {
+  position: absolute;
+  transition: 0.5s;
+  top: 3px;
+  left: 18px;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  border-radius: 9.5px;
+}
+.toggler.on {
+  background-color: #ace1af;
+}
+.toggler.on::after {
+  left: 3px;
+}
+.toggler.on:focus {
+  outline: none;
+}
+.toggler:focus {
+  outline: none;
+}
